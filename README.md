@@ -31,29 +31,30 @@ Create a directory named "MyLab" on the desktop.
 ## COMMAND AND OUTPUT
 
 Change to the "MyLab" directory and create an empty text file named "MyFile.txt" inside it.
-
+mkdir %userprofile%\Desktop\MyLab
 
 ## COMMAND AND OUTPUT
 
 List the contents of the "MyLab" directory.
-
+cd %userprofile%\Desktop\MyLab
 
 ## COMMAND AND OUTPUT
 
 Copy "MyFile.txt" to a new folder named "Backup" on the desktop.
-
+type nul > MyFile.txt
 ## COMMAND AND OUTPUT
 
 Move the "MyLab" directory to the "Documents" folder.
-
+dir %userprofile%\Desktop\MyLab
 
 ## COMMAND AND OUTPUT
-
+mkdir %userprofile%\Desktop\Backup
 
 ## Exercise 2: Advanced Batch Scripting
 Create a batch script named "BackupScript.bat" that creates a backup of files with the ".docx" extension from the "Documents" folder to a new folder named "DocBackup" on the desktop.
 
-
+mkdir %userprofile%\Desktop\Documents
+move MyLab Documents
 
 
 
@@ -61,6 +62,7 @@ Create a batch script named "BackupScript.bat" that creates a backup of files wi
 
 ## OUTPUT
 
+![image](https://github.com/23004742/Windows-basic-commands-batchscript/assets/150319318/56b5c9e7-d9f9-4ce9-8773-b5bb06d85079)
 
 
 
